@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Website Version</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 520px;
+      text-align: center;
+      background: #1b1b1b;
+      padding: 40px 28px;
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 32px;
+    }
+
+    p {
+      margin: 0 0 28px;
+      color: #cfcfcf;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      display: grid;
+      gap: 14px;
+    }
+
+    a {
+      display: block;
+      padding: 16px 18px;
+      border-radius: 12px;
+      background: #d4af37;
+      color: #111;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+      background: #f0c94a;
+    }
+
+    .secondary {
+      background: #2c2c2c;
+      color: #fff;
+      border: 1px solid #444;
+    }
+
+    .secondary:hover {
+      background: #3a3a3a;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Select Version</h1>
+    <p>Choose which version of the Perfect Gentleman website you want to preview.</p>
+
+    <div class="buttons">
+      <a href="Version1/index.html">Open Version 1</a>
+      <a href="Version2/index.html" class="secondary">Open Version 2</a>
+    </div>
+  </main>
+</body>
+</html>
