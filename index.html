@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <title>INFINITY CROWN AS</title>
+    <title>INFINITY CROWN INC.</title>
 
     <style>
         /* Style for video container */
@@ -50,22 +50,22 @@
 
     <div class="font-left animated fadeInDown no-select">
         <br>
-        <p class="font-light font-white title">INFINITY CROWN AS</p>
-        <br><a class="font-bold font-white link" id="website" href="https://infinitycrown.no"
-            target="_blank">infinitycrown&#46;no</a>
-        <br><a class="font-bold font-white link" id="shop" href="https://web.infinitycrown.no/"
-            target="_blank">konsultasjon</a>
-        <br><a class="font-bold font-white link" id="portfolio" href="https://web.infinitycrown.no/pages/portfolio"
-            target="_blank">portefølje</a>
-        <br><a class="font-bold font-white link" id="email" href="mailto:info@infinitycrown.no"
-            target="_blank">info@infinitycrown.no</a>
-        <br><a class="font-bold font-white link" id="business">organisasjonsnummer: 937 343 841</a>
-         <br><a href="https://infinitycrown.ca"><img src="assets/canada.png" style="cursor: pointer;"></a> <a href="https://infinitycrown.no"><img src="assets/no.png" style="cursor: pointer;"></a>
+        <p class="font-light font-white title">INFINITY CROWN INC.</p>
+        <br><a class="font-bold font-white link" id="website" href="https://infinitycrown.ca"
+            target="_blank">infinitycrown&#46;ca</a>
+        <br><a class="font-bold font-white link" id="shop" href="https://web.infinitycrown.ca/"
+            target="_blank">consultation</a>
+        <br><a class="font-bold font-white link" id="portfolio" href="https://web.infinitycrown.ca/pages/portfolio"
+            target="_blank">portfolio</a>
+        <br><a class="font-bold font-white link" id="email" href="mailto:info@infinitycrown.ca"
+            target="_blank">info@infinitycrown.ca</a>
+        <br><a class="font-bold font-white link" id="business">corporation number: 1759181-1</a>
+        <!-- <br><a href="https://infinitycrown.ca"><img src="assets/canada.png" style="cursor: pointer;"></a> <a href="https://infinitycrown.no"><img src="assets/no.png" style="cursor: pointer;"></a> -->
     </div>
     <div class="font-left-bottom animated fadeInUp no-select">
         <a class="font-bold font-white subtext" href="privacy-policy/" target="_blank">privacy</a>
         <!--<br><a class="font-bold font-white subtext" href="https://steamcommunity.com/id/nidushan" target="_blank">steam</a>-->
-        <p class="font-light font-white no-margin subtext">&copy; <span id="website">infinitycrown.no</span> 2019 -
+        <p class="font-light font-white no-margin subtext">&copy; <span id="website">infinitycrown.ca</span> 2019 -
             <script>
                 document.write(new Date().getFullYear())
             </script>
@@ -89,6 +89,53 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/video.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        // CA Site - Default to English
+        const language = 'en';
+        displayContent(language);
+        
+        function displayContent(language) {
+            const languageData = {
+                "no": {
+                    "business": "organisasjonsnummer: 928 593 215",
+                    "email": { "text": "info@infinitycrown.no", "link": "mailto:info@infinitycrown.no" },
+                    "shop": { "text": "konsultasjon", "link": "https://web.infinitycrown.no/" },
+                    "website": { "text": "infinitycrown.no", "link": "https://infinitycrown.no" },
+                    "cake": "Jeg liker kake",
+                    "portfolio": { "text": "portefølje", "link": "https://web.infinitycrown.no/pages/portfolio" }
+                },
+                "en": {
+                    "business": "corporation number: 1759181-1",
+                    "email": { "text": "info@infinitycrown.ca", "link": "mailto:info@infinitycrown.ca" },
+                    "shop": { "text": "consultation", "link": "https://web.infinitycrown.ca/" },
+                    "website": { "text": "infinitycrown.ca", "link": "https://infinitycrown.ca" },
+                    "cake": "I like cake",
+                    "portfolio": { "text": "portfolio", "link": "https://web.infinitycrown.ca/pages/portfolio" }
+                }
+            };
+    
+            const elementsToUpdate = [
+                { id: "business", data: languageData[language].business },
+                { id: "email", data: languageData[language].email },
+                { id: "shop", data: languageData[language].shop },
+                { id: "website", data: languageData[language].website },
+                { id: "cake", data: languageData[language].cake },
+                { id: "portfolio", data: languageData[language].portfolio }
+            ];
+    
+            elementsToUpdate.forEach(element => {
+                const elements = document.querySelectorAll(`#${element.id}`);
+                elements.forEach(el => {
+                    if (typeof element.data === "string") {
+                        el.innerHTML = element.data;
+                    } else {
+                        el.innerHTML = element.data.text;
+                        el.href = element.data.link;
+                    }
+                });
+            });
+        }
+    </script>    
 </body>
 
 </html>
