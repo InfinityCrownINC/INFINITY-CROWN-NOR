@@ -7,7 +7,8 @@ const content = {
       about: "About",
       gallery: "Gallery",
       booking: "Booking",
-      contact: "Contact"
+      contact: "Contact",
+      footer: "Made by INFINITY CROWN INC."
     },
     hero: {
       eyebrow: "Barber shop in Sandnes",
@@ -92,7 +93,8 @@ const content = {
       about: "Om oss",
       gallery: "Galleri",
       booking: "Booking",
-      contact: "Kontakt"
+      contact: "Kontakt",
+      footer: "Laget av INFINITY CROWN AS"
     },
     hero: {
       eyebrow: "Barbershop i Sandnes",
