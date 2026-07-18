@@ -8,11 +8,86 @@
   <meta name="description"
     content="Perfect Gentleman Barber Shop & Frisør in Sandnes. Men's haircuts, fades, beard trim, shaving and grooming at Langgata 45." />
   <meta name="theme-color" content="#11100d" />
+  <meta name="robots" content="index, follow" />
 
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://perfectgentleman.no/" />
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Perfect Gentleman Barber Shop & Frisør" />
   <meta property="og:description" content="Men's haircuts, fades, beard trim and shaving in Sandnes." />
-  <meta property="og:image" content="assets/full_logo.jpg" />
+  <meta property="og:image" content="https://perfectgentleman.no/assets/full_logo.jpg" />
+  <meta property="og:url" content="https://perfectgentleman.no/" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="nb_NO" />
+  <meta property="og:site_name" content="Perfect Gentleman Barber Shop & Frisør" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Perfect Gentleman Barber Shop & Frisør" />
+  <meta name="twitter:description" content="Men's haircuts, fades, beard trim and shaving in Sandnes." />
+  <meta name="twitter:image" content="https://perfectgentleman.no/assets/full_logo.jpg" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="en" href="https://perfectgentleman.no/en/" />
+  <link rel="alternate" hreflang="nb" href="https://perfectgentleman.no/" />
+  <link rel="alternate" hreflang="x-default" href="https://perfectgentleman.no/" />
+
+  <!-- DNS prefetch / preconnect -->
+  <link rel="dns-prefetch" href="//maps.google.com" />
+  <link rel="dns-prefetch" href="//www.facebook.com" />
+  <link rel="dns-prefetch" href="//www.instagram.com" />
+  <link rel="preconnect" href="https://maps.google.com" />
+  <link rel="preconnect" href="https://www.facebook.com" />
+  <link rel="preconnect" href="https://www.instagram.com" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://perfectgentleman.no/#business",
+    "name": "Perfect Gentleman Barber Shop & Frisør",
+    "image": "https://perfectgentleman.no/assets/full_logo.jpg",
+    "url": "https://perfectgentleman.no/",
+    "telephone": "+4745662724",
+    "email": "",
+    "priceRange": "100-400 NOK",
+    "description": "Men's haircuts, fades, beard trim, shaving and grooming in Sandnes.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Langgata 45",
+      "addressLocality": "Sandnes",
+      "addressRegion": "Rogaland",
+      "postalCode": "4306",
+      "addressCountry": "NO"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 58.8519,
+      "longitude": 5.7352
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "", "closes": "" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "159",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://www.facebook.com/perfectgentleman.no/",
+      "https://www.instagram.com/perfect_gentleman_sandnes/"
+    ]
+  }
+  </script>
 
   <link rel="icon" href="assets/logo.jpg" />
   <link rel="apple-touch-icon" href="assets/logo.jpg" />
@@ -26,7 +101,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Perfect Gentleman home">
-        <img src="assets/logo%20with%20text.jpg" alt="Perfect Gentleman logo" />
+        <img src="assets/logo%20with%20text.jpg" alt="Perfect Gentleman logo" width="200" height="60" loading="eager" />
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
@@ -38,11 +113,11 @@
 
       <div class="language-selector" aria-label="Language selector">
         <button class="language-button" type="button" data-lang="en" aria-label="Switch to English">
-          <img src="assets/uk.png" alt="English" />
+          <img src="assets/uk.png" alt="English" width="24" height="16" loading="eager" />
           <span>EN</span>
         </button>
         <button class="language-button" type="button" data-lang="no" aria-label="Switch to Norwegian">
-          <img src="assets/no.png" alt="Norsk" />
+          <img src="assets/no.png" alt="Norsk" width="24" height="16" loading="eager" />
           <span>NO</span>
         </button>
       </div>
@@ -70,8 +145,8 @@
 
         <div class="hero-media reveal delay-1 hide-on-mobile">
           <div class="hero-card">
-            <img class="hero-logo" src="assets/full_logo.jpg" alt="Perfect Gentleman full logo" />
-            <img class="hero-photo" src="assets/barbers-at-work.webp" alt="Barbers working inside Perfect Gentleman" />
+            <img class="hero-logo" src="assets/full_logo.jpg" alt="Perfect Gentleman full logo" width="100" height="150" loading="eager" fetchpriority="high" />
+            <img class="hero-photo" src="assets/barbers-at-work.webp" alt="Barbers working inside Perfect Gentleman" width="400" height="300" loading="eager" />
           </div>
         </div>
       </div>
@@ -141,8 +216,8 @@
 
     <section class="section-pad section-alt" id="about">
       <div class="container about-grid">
-        <div class="about-media reveal hide-on-mobile">
-          <img src="assets/studio-empty-chairs.webp" alt="Perfect Gentleman barber shop interior" />
+          <div class="about-media reveal hide-on-mobile">
+          <img src="assets/studio-empty-chairs.webp" alt="Perfect Gentleman barber shop interior" width="600" height="400" loading="lazy" />
         </div>
         <div class="about-copy reveal delay-1">
           <p class="eyebrow" data-i18n="about.eyebrow">About Perfect Gentleman</p>
@@ -190,8 +265,8 @@
             target="_blank" rel="noopener" data-i18n="reviews.button">View Google profile</a>
         </div>
         <div class="google-card reveal delay-1">
-          <div class="google-card-top">
-            <img src="assets/logo.jpg" alt="Perfect Gentleman logo" />
+            <div class="google-card-top">
+            <img src="assets/logo.jpg" alt="Perfect Gentleman logo" width="60" height="60" loading="lazy" />
             <div>
               <strong>Perfect Gentleman</strong>
               <span data-i18n="reviews.category">Barber shop & Frisør</span>
